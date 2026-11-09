@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山间手记 · 山风的读书与行走</title>
+    <style>
+        :root {
+            --paper: #f7f2e9;
+            --ink: #2e2a24;
+            --muted: #7a7264;
+            --line: #ddd3bf;
+            --accent: #9a6b3f;
+            --card: #fffdf7;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: var(--paper);
+            color: var(--ink);
+            font-family: Georgia, "Songti SC", "Noto Serif SC", serif;
+            line-height: 1.8;
+        }
+        .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+        header { border-bottom: 1px solid var(--line); padding: 18px 0; }
+        .topbar { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+        .brand { font-size: 22px; font-weight: bold; letter-spacing: 2px; }
+        .brand span { color: var(--accent); }
+        nav a { color: var(--muted); text-decoration: none; margin-left: 18px; font-size: 15px; }
+        nav a:hover { color: var(--accent); }
+        .hero { padding: 56px 0 40px; }
+        .hero .kicker { color: var(--accent); letter-spacing: 3px; font-size: 13px; margin-bottom: 12px; }
+        .hero h1 { font-size: 34px; line-height: 1.4; margin-bottom: 14px; }
+        .hero p { color: var(--muted); font-size: 16px; }
+        section { padding: 28px 0; border-top: 1px solid var(--line); }
+        h2 { font-size: 20px; margin-bottom: 16px; letter-spacing: 1px; }
+        article { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 18px 20px; margin-bottom: 14px; }
+        article h3 { font-size: 17px; margin-bottom: 4px; }
+        article .date { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
+        article p { font-size: 15px; color: #453f35; }
+        table { width: 100%; border-collapse: collapse; font-size: 15px; }
+        th, td { text-align: left; padding: 9px 6px; border-bottom: 1px solid var(--line); }
+        th { color: var(--muted); font-weight: normal; }
+        .about p { font-size: 15px; color: #453f35; margin-bottom: 10px; }
+        footer { border-top: 1px solid var(--line); padding: 22px 0 40px; color: var(--muted); font-size: 13px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+        @media (max-width: 600px) { .hero h1 { font-size: 26px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="wrap topbar">
+            <div class="brand">山间手记 <span>· 山风</span></div>
+            <nav>
+                <a href="/">首页</a>
+                <a href="#notes">笔记</a>
+                <a href="#trails">山行</a>
+                <a href="#about">关于</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="wrap">
+        <div class="hero">
+            <div class="kicker">读书 · 行走 · 记录</div>
+            <h1>把走过的路和读过的书，<br>慢慢记下来。</h1>
+            <p>这是一个很小的个人角落，写一点山里的见闻，和书桌前的随想。不定期更新，想到什么写什么。</p>
+        </div>
+
+        <section id="notes">
+            <h2>最近的笔记</h2>
+            <article>
+                <h3>秋天最后一次进山</h3>
+                <div class="date">2026 年 11 月 2 日 · 晴</div>
+                <p>霜降刚过，山里的柿子还挂在枝头。走了六公里，腿有点酸，但山顶那口风是凉的、干净的。下山时捡了两片红叶，夹在书里。</p>
+            </article>
+            <article>
+                <h3>重读《山月记》</h3>
+                <div class="date">2026 年 10 月 18 日 · 雨</div>
+                <p>很多年前读过，觉得讲的是别人；今年再读，才发现写的是每一个不敢往前走的人。有些路，停下来想太久，就走不成了。</p>
+            </article>
+            <article>
+                <h3>一壶茶的时间</h3>
+                <div class="date">2026 年 10 月 5 日 · 阴</div>
+                <p>周末没有安排，烧水、泡茶、看窗外的云慢慢走。原来什么都不做，也是一种安排，而且是很难得的一种。</p>
+            </article>
+        </section>
+
+        <section id="trails">
+            <h2>今年的山行记录</h2>
+            <table>
+                <tr><th>日期</th><th>地点</th><th>里程</th><th>天气</th></tr>
+                <tr><td>11 月 2 日</td><td>西山环线</td><td>6 公里</td><td>晴</td></tr>
+                <tr><td>10 月 12 日</td><td>云顶古道</td><td>9 公里</td><td>多云</td></tr>
+                <tr><td>9 月 21 日</td><td>白水涧</td><td>4 公里</td><td>晴</td></tr>
+                <tr><td>8 月 30 日</td><td>石壁山</td><td>7 公里</td><td>阵雨</td></tr>
+            </table>
+        </section>
+
+        <section id="about" class="about">
+            <h2>关于这个角落</h2>
+            <p>山风，一个喜欢走路和看书的普通人。平时在城里工作，周末有空就往山里跑，回来把看到的、想到的记几笔。</p>
+            <p>这里没有别的东西，就是几篇笔记和一张山行表。如果你也喜欢走路，欢迎常来看看。</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+            <span>© 2026 山间手记</span>
+            <span>山风 · 写于桌前</span>
+        </div>
+    </footer>
+</body>
+</html>
